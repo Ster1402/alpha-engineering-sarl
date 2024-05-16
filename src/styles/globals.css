@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Helvetica';
+    src: url('../assets/fonts/helvetica/Helvetica-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Gilroy-bold';
+    src: url('../assets/fonts/gilroy/Gilroy-ExtraBold.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Gilroy-normal';
+    src: url('../assets/fonts/gilroy/Gilroy-Light.otf') format('opentype');
+  }
+
+  b {
+    @apply font-semibold text-blue font-heading;
+  }
+
+  h1 {
+    @apply font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue to-blue via-gradient-end font-heading;
+  }
+
+  .input-group {
+    @apply flex flex-col flex-wrap gap-4 md:flex-row w-full md:items-start;
+  }
+
+  .active-link {
+    @apply text-black font-bold;
+  }
+
+  #footer .active-link {
+    @apply text-white font-normal hover:text-light-gold;
+  }
+
+  .input-field {
+    @apply md:min-w-64 xl:min-w-96;
+  }
+
+}
