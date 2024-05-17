@@ -7,13 +7,13 @@ import Link from 'next/link';
 
 function ContactPage() {
   return (
-    <article className="mx-auto h-fit mb-4 gap-2 flex flex-col items-center">
-      <h1 className={cn('text-2xl md:text-4xl')}>
+    <article className="mx-auto pt-12 h-fit mb-4 gap-2 flex flex-col items-center">
+      <h1 className={cn("text-2xl md:text-4xl")}>
         {lang?.pages.contact.title}
       </h1>
       <p className="text-sm">
-        {lang?.pages.contact.subtitle}{' '}
-        <Link href={ROUTES.MAIL_TO.CHILLO}>
+        {lang?.pages.contact.subtitle}{" "}
+        <Link href={ROUTES.MAIL_TO.ENTERPRISE}>
           <span className="text-secondary hover:text-light-gold font-semibold">
             {lang?.pages.contact.subtitleButton}
           </span>
