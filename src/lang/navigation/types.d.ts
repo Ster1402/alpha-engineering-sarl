@@ -1,5 +1,7 @@
 // Navigation
 interface NavigationLink {
-    title?: string;
-    href: string;
+  title?: string;
+  href: string;
+  hasSubContent?: boolean;
+  subContent?: any[];
 }

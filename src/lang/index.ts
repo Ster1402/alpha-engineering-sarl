@@ -22,11 +22,6 @@ const lang = {
   manageDestinationSection: defaultManageDestinationSection,
   buttons: defaultButtonText,
   pages: {
-    webhookCreation: {
-      configureSource: defaultConfigureSourcePage,
-      configureDestination: defaultConfigureDestinationPage,
-      configureWebhook: defaultConfigureWebhookPage,
-    },
     register: defaultRegisterPage,
     login: defaultLoginPage,
     account_validation: defaultAccountValidationPage,

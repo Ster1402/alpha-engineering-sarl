@@ -7,10 +7,7 @@ import Icons from "../common/Icons";
 
 const Footer = () => {
   return (
-    <footer
-      id={SECTIONS_IDS.FOOTER}
-      className="w-full pt-8 sm:pt-12 bg-dark overflow-x-hidden"
-    >
+    <footer id={SECTIONS_IDS.FOOTER} className="w-full pt-8 sm:pt-12 bg-dark ">
       <div className="w-full px-4 md:px-12 pb-12">
         <div className="flex flex-col gap-4 flex-wrap sm:gap-8 md:flex-row md:justify-between space-y-8 sm:space-y-0">
           <div>
@@ -34,6 +31,7 @@ const Footer = () => {
           <div className="flex flex-col gap-4 sm:gap-8 sm:flex-row md:space-x-8 space-y-4 sm:space-y-0">
             <div className="flex flex-col space-y-4 text-center">
               <NavigationLinks
+                isBottom={true}
                 linkClassName="font-light text-lg"
                 className="text-white font-light items-start md:items-center md:space-x-0 md:flex-col"
               />

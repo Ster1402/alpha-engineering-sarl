@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { LinkHTMLAttributes, ReactHTMLElement } from "react";
 import {
   FaArrowDown,
   FaFacebook,
@@ -97,8 +98,8 @@ const Icons = {
   github: GitHubLogoIcon,
   menu: HamburgerMenuIcon,
   code: FaCode,
-  logo: () => (
-    <Link className="w-48" href={ROUTES.HOME}>
+  logo: ({ className }: React.LinkHTMLAttributes<HTMLLinkElement>) => (
+    <Link className={cn("w-48", className)} href={ROUTES.HOME}>
       <Image
         width={160}
         height={96}
@@ -107,8 +108,8 @@ const Icons = {
       />
     </Link>
   ),
-  logo_white: () => (
-    <Link className="w-48" href={ROUTES.HOME}>
+  logo_white: ({ className }: React.LinkHTMLAttributes<HTMLLinkElement>) => (
+    <Link className={cn("w-48", className)} href={ROUTES.HOME}>
       <Image
         width={160}
         height={96}

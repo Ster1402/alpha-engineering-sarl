@@ -1,4 +1,5 @@
 // Contacts
+import { defaultAppServices } from "@/lang/services";
 import { type Contact } from "@/lib/types";
 
 const CONTACTS: Contact[] = [
@@ -14,11 +15,6 @@ const CONTACTS: Contact[] = [
 ];
 
 // Routes
-type Tabs = {
-  name: string;
-  displayName: string;
-};
-
 const ROUTES = {
   HOME: "/",
   ABOUT_US: "/about-us",
@@ -63,6 +59,8 @@ const NAVIGATION_LINKS: NavigationLink[] = [
   },
   {
     title: "Services",
+    hasSubContent: true,
+    subContent: defaultAppServices,
     href: ROUTES.SERVICES,
   },
   {

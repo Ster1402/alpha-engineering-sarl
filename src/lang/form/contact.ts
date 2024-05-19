@@ -1,16 +1,20 @@
 const defaultContactPage: FormPage = {
-  title: "Contact Us",
-  subtitle: "Contact us today to learn more about our services.",
+  title: "Besoin de nos services ?",
+  subtitle: "Contactez-nous pour plus d'informations",
   form: {
     comment: `Alpha Engineering is a full-service construction company.`,
     fields: {
       name: {
-        label: "Name and Surname",
+        label: "Nom",
         placeholder: "",
         required: true,
       },
-      subject: {
-        label: "Subject",
+      surname: {
+        label: "Prénom",
+        placeholder: "",
+      },
+      tel: {
+        label: "Téléphone",
         placeholder: "",
         required: false,
       },

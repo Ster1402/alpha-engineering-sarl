@@ -21,14 +21,12 @@ import { cn } from "@/lib/utils";
 function Banner() {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
-  const [count, setCount] = React.useState(0);
 
   React.useEffect(() => {
     if (!api) {
       return;
     }
 
-    setCount(api.scrollSnapList().length);
     setCurrent(api.selectedScrollSnap() + 1);
 
     api.on("select", () => {
@@ -99,7 +97,7 @@ function Banner() {
                     </div>
                     <Link
                       className="w-full flex items-center justify-center"
-                      href={ROUTES.SERVICES}
+                      href={ROUTES.CONTACT_US}
                     >
                       <Button
                         size={"sm"}
