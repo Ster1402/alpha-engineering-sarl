@@ -15,7 +15,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "../ui/button";
 import React from "react";
 import Link from "next/link";
-import { ROUTES } from "@/config";
+import { ROUTES, SECTIONS_IDS } from "@/config";
 import { cn } from "@/lib/utils";
 
 function Banner() {
@@ -37,7 +37,7 @@ function Banner() {
   const plugin = React.useRef(
     Autoplay({
       delay: 5000,
-      stopOnMouseEnter: true,
+      stopOnMouseEnter: false,
       stopOnFocusIn: true,
       stopOnInteraction: true,
     })
@@ -55,6 +55,7 @@ function Banner() {
 
   return (
     <Section
+      id={SECTIONS_IDS.BANNER}
       className={cn(
         `bg-light-gray py-4 bg-slide1 bg-center bg-cover bg-opacity-15 relative sm:px-4 md:text-center`,
         slides[current - 1]
@@ -64,14 +65,12 @@ function Banner() {
 
       <Carousel
         setApi={setApi}
-        className="w-full mx-auto max-w-sm md:max-w-md"
+        className="w-full mx-auto max-w-sm md:max-w-[90%]"
         plugins={[plugin.current]}
         opts={{
           align: "start",
           duration: 50,
           loop: true,
-          dragFree: true,
-          active: true,
         }}
       >
         <CarouselContent className="-ml-1">
@@ -86,12 +85,12 @@ function Banner() {
                     `flex py-4 bg-transparent border-none text-white`
                   )}
                 >
-                  <CardContent className="flex flex-col items-center justify-center p-6 gap-4">
+                  <CardContent className="flex flex-col items-center justify-center p-6 gap-6">
                     <div className="flex bg-transparent flex-col justify-start items-center gap-1">
-                      <h2 className="font-bold text-2xl md:text-4xl font-heading">
+                      <h2 className="font-bold text-2xl md:text-5xl lg:text-6xl mb-4 font-heading">
                         {item.title}
                       </h2>
-                      <h3 className="font-bold text-xl md:text-3xl font-heading text-orange">
+                      <h3 className="font-bold text-xl md:text-4xl font-heading text-orange">
                         {item.subtitle}
                       </h3>
                     </div>
@@ -99,10 +98,7 @@ function Banner() {
                       className="w-full flex items-center justify-center"
                       href={ROUTES.CONTACT_US}
                     >
-                      <Button
-                        size={"sm"}
-                        className="w-fit border-white text-white"
-                      >
+                      <Button className="w-fit px-8 py-4 border-white text-white">
                         {lang.buttons["more"]}
                       </Button>
                     </Link>

@@ -24,7 +24,7 @@ const defaultContactPage: FormPage = {
         required: true,
       },
       message: {
-        label: "Message",
+        label: "De quoi avez-vous besoin ?",
         placeholder: "",
         required: true,
       },

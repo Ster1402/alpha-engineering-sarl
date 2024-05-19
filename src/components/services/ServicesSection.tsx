@@ -2,10 +2,14 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import lang from "@/lang";
 import React from "react";
+import { SECTIONS_IDS } from "@/config";
 
 const ServicesSection = () => {
   return (
-    <section className="text-gray-600 bg-[#1CA4B11A]/15 body-font">
+    <section
+      id={SECTIONS_IDS.SERVICE}
+      className="text-gray-600 bg-[#1CA4B11A]/15 body-font"
+    >
       <div className="container px-5 py-24 mx-auto">
         <h1 className="text-2xl md:text-4xl text-black font-bold text-center mb-2">
           Nos Services

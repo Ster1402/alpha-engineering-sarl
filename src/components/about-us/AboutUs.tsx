@@ -1,9 +1,10 @@
+import { SECTIONS_IDS } from "@/config";
 import { Button } from "../ui/button";
 import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <section className="text-gray-600 body-font">
+    <section id={SECTIONS_IDS.ABOUT_US} className="text-gray-600 body-font">
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <Image

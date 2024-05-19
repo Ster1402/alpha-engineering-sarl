@@ -19,7 +19,7 @@ const ROUTES = {
   HOME: "/",
   ABOUT_US: "/about-us",
   SERVICES: "/services",
-  PARTNERS: "/partners",
+  PARTNERS: "/#partners",
   KNOWLEDGE: "/our-knowledge",
   CONTACT_US: "/contact-us",
   FAQ: "/faq",
@@ -47,6 +47,7 @@ const SECTIONS_IDS = {
   BANNER: "banner",
   ABOUT_US: "about-us",
   SERVICE: "services",
+  PARTNERS: "partners",
   FAQ: "faq",
   FOOTER: "footer",
 };
@@ -66,10 +67,6 @@ const NAVIGATION_LINKS: NavigationLink[] = [
   {
     title: "Nos partenaires",
     href: ROUTES.PARTNERS,
-  },
-  {
-    title: "Notre expertise",
-    href: ROUTES.KNOWLEDGE,
   },
 ];
 

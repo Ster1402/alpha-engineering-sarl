@@ -127,14 +127,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormLabel>
                   {lang?.pages.contact.form.fields[field.name]?.label}{" "}
-                  {lang?.pages.contact.form.fields[field.name]?.required ? (
-                    <span
-                      title="required"
-                      className="text-red-500 font-bold text-lg"
-                    >
-                      *
-                    </span>
-                  ) : null}
+                
                 </FormLabel>
                 <FormControl>
                   <Input
@@ -152,19 +145,11 @@ const ContactForm = () => {
           />
           <FormField
             control={form.control}
-            name={"subject"}
+            name={"tel"}
             render={({ field }) => (
               <FormItem>
                 <FormLabel>
-                  {lang?.pages.contact.form.fields[field.name]?.label}{" "}
-                  {lang?.pages.contact.form.fields[field.name]?.required ? (
-                    <span
-                      title="required"
-                      className="text-red-500 font-bold text-lg"
-                    >
-                      *
-                    </span>
-                  ) : null}
+                  {lang?.pages.contact.form.fields[field.name]?.label}
                 </FormLabel>
                 <FormControl>
                   <Input
@@ -212,16 +197,15 @@ const ContactForm = () => {
           )}
         />
 
-        <div className="flex gap-2 justify-end">
+        <div className="flex gap-4 pt-4 justify-end">
           <Button
-            size={"sm"}
             variant={"outline"}
             type="reset"
             onClick={resetFields}
           >
             {lang?.pages.contact.form.altButton}
           </Button>
-          <Button size={"sm"} type="submit">
+          <Button type="submit" className="px-8">
             {lang?.pages.contact.form.submitButton}
           </Button>
         </div>
