@@ -7,11 +7,11 @@ interface RenderHtmlContentProps extends React.HTMLAttributes<HTMLDivElement> {
 
 function RenderHtmlContent({ content, className }: RenderHtmlContentProps) {
   return (
-    <div
+    <p
       className={cn('html-text [&>p]:whitespace-normal', className)}
       dangerouslySetInnerHTML={{
         __html: content ?? '',
-      }}></div>
+      }}></p>
   );
 }
 

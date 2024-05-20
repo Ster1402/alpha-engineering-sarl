@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import lang from "@/lang";
 import ListItem from "./ListItem";
+import RenderHtmlContent from "./RenderHTMLContent";
 
 interface NavigationLinksProps extends React.HTMLAttributes<HTMLDivElement> {
   linkClassName?: string;
@@ -41,7 +42,7 @@ function NavigationLinks({
         >
           {appConfig.navigation.map((link, index) =>
             link.hasSubContent ? (
-              <NavigationMenuItem>
+              <NavigationMenuItem key={`${index}-${link.href}`}>
                 <NavigationMenuTrigger
                   className={cn(
                     "bg-transparent hover:text-light-gold hover:bg-transparent inline-flex",
@@ -58,7 +59,7 @@ function NavigationLinks({
                         title={component.subtitle}
                         href={component.href}
                       >
-                        {component.description}
+                        <RenderHtmlContent content={component.description} />
                       </ListItem>
                     ))}
                   </ul>

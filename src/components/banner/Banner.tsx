@@ -96,7 +96,7 @@ function Banner() {
                     </div>
                     <Link
                       className="w-full flex items-center justify-center"
-                      href={ROUTES.CONTACT_US}
+                      href={item.href}
                     >
                       <Button className="w-fit px-8 py-4 border-white text-white">
                         {lang.buttons["more"]}

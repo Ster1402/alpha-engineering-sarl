@@ -9,9 +9,6 @@ import {
   defaultContactPage,
   defaultAccountValidationPage,
   defaultProfilePage,
-  defaultConfigureSourcePage,
-  defaultConfigureDestinationPage,
-  defaultConfigureWebhookPage,
 } from "./form";
 import { defaultManageDestinationSection } from "./manage-destination-section";
 

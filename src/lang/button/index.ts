@@ -1,5 +1,6 @@
 const defaultButtonText: ButtonText = {
   contact: "Contactez-Nous",
+  whatsapp: "WhatsApp",
   en: "EN",
   fr: "FR",
   faq: "FAQ",

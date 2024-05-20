@@ -19,11 +19,11 @@
   }
 
   b {
-    @apply font-semibold text-blue font-heading;
+    @apply font-semibold font-heading;
   }
 
   h1 {
-    @apply font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue to-blue via-gradient-end font-heading;
+    @apply font-extrabold text-orange font-heading;
   }
 
   .input-group {

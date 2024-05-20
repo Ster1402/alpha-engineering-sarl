@@ -9,7 +9,7 @@ export default async function GuestLayout({
   return (
     <>
       <Header />
-      <main className="relative text-black flex justify-between min-h-screen flex-col sm:justify-start">
+      <main className="relative text-black flex justify-between flex-col sm:justify-start">
         {children}
       </main>
       <Footer />

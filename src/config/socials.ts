@@ -22,7 +22,7 @@ const linkFacebook: SocialLink = {
 };
 const linkWhatsapp: SocialLink = {
   title: SOCIALS_TITLES.WHATSAPP,
-  href: '#',
+  href: 'https://wa.me/237656656507',
 };
 const linkInstagram: SocialLink = {
   title: SOCIALS_TITLES.INSTAGRAM,

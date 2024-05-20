@@ -1,6 +1,7 @@
 // Contacts
 import { defaultAppServices } from "@/lang/services";
 import { type Contact } from "@/lib/types";
+import { SOCIALS } from "./socials";
 
 const CONTACTS: Contact[] = [
   {
@@ -27,6 +28,13 @@ const ROUTES = {
   MAIL_TO: {
     ENTERPRISE: "mailto:contact@engineering-alpha.com",
     COMMUNITY: "mailto:contact@engineering-alpha.com",
+  },
+
+  SOCIALS: {
+    WHATSAPP:
+      SOCIALS.find((social) => social.title === "Whatsapp")?.href ?? "#",
+    INSTAGRAM:
+      SOCIALS.find((social) => social.title === "Instagram")?.href ?? "#",
   },
 
   SERVICES_SUB_MENU: {
