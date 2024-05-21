@@ -14,7 +14,7 @@ const NavigationMenu = React.forwardRef<
   <NavigationMenuPrimitive.Root
     ref={ref}
     className={cn(
-      "relative z-50 flex max-w-max flex-1 items-center justify-center",
+      "relative z-50 flex max-w-max flex-1 justify-center",
       className
     )}
     {...props}
@@ -32,7 +32,7 @@ const NavigationMenuList = React.forwardRef<
   <NavigationMenuPrimitive.List
     ref={ref}
     className={cn(
-      "group flex flex-1 list-none items-center justify-center space-x-1",
+      "group flex flex-1 list-none justify-center md:space-x-1",
       className
     )}
     {...props}
@@ -43,7 +43,7 @@ NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName;
 const NavigationMenuItem = NavigationMenuPrimitive.Item;
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 font-medium transition-colors hover:text-light-gold focus:text-light-gold focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-transparent data-[state=open]:bg-transparent dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+  "group inline-flex h-10 w-max items-center justify-center rounded-md md:px-6 py-2 font-medium transition-colors hover:text-light-gold focus:text-light-gold focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-transparent data-[state=open]:bg-transparent dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
 );
 
 const NavigationMenuTrigger = React.forwardRef<
@@ -87,11 +87,13 @@ const NavigationMenuViewport = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Viewport> & {
     isBottom?: boolean;
   }
->(({ className, isBottom = false, ...props }, ref) => (
+>(({ className, isBottom, ...props }, ref) => (
   <div
     className={cn(
-      "absolute left-0 z-50 flex justify-center",
-      isBottom ? "bottom-1/4" : "top-full"
+      "absolute left-0 z-50 flex justify-center mb-6 ",
+      isBottom
+        ? " md:-translate-x-1/2 bottom-[3rem] sm:bottom-[5rem]"
+        : " top-full"
     )}
   >
     <NavigationMenuPrimitive.Viewport

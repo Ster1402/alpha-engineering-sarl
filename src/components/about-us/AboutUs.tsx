@@ -5,8 +5,8 @@ import Image from "next/image";
 const AboutUs = () => {
   return (
     <section id={SECTIONS_IDS.ABOUT_US} className="text-gray-600 body-font">
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <div className="container mx-auto flex px-5 py-12 sm:py-24 md:flex-row flex-col items-center">
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full">
           <Image
             width={720}
             height={600}

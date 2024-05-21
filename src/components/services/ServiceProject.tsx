@@ -30,7 +30,7 @@ const ServiceProject: React.FC<ServiceProjectProps> = ({
     >
       <div
         className={cn(
-          "container mx-auto justify-center gap-2 flex flex-col md:flex-row",
+          "mx-auto justify-center gap-2 flex flex-col md:flex-row",
           reverse && "md:flex-row-reverse"
         )}
       >
@@ -67,7 +67,7 @@ const ServiceProject: React.FC<ServiceProjectProps> = ({
           </div>
         </div>
         <div className="w-full h-full flex-1 md:w-1/2 flex justify-center items-center md:items-start">
-          <div className="h-64 md:h-80 overflow-hidden border-b-4 border-orange">
+          <div className="sm:h-64 md:h-80 overflow-hidden border-b-4 border-orange">
             <Image
               src={currentImage}
               alt="Service image"

@@ -4,7 +4,7 @@ import Image from "next/image";
 const Partners = () => {
   return (
     <section id={SECTIONS_IDS.PARTNERS} className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-12 sm:py-24 mx-auto">
         <h1 className="text-2xl md:text-4xl text-black font-bold text-center mb-12">
           Il nous ont fait confiance
         </h1>

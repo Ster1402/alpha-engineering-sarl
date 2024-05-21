@@ -29,11 +29,11 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4 sm:gap-8 sm:flex-row md:space-x-8 space-y-4 sm:space-y-0">
-            <div className="flex flex-col space-y-4 text-center">
+            <div className="flex flex-col space-y-4 md:text-center">
               <NavigationLinks
                 isBottom={true}
                 linkClassName="font-light text-lg"
-                className="text-white font-light items-start md:items-center md:space-x-0 md:flex-col"
+                className="text-white font-light items-start md:space-x-0 md:flex-col"
               />
             </div>
           </div>

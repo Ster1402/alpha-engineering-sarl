@@ -14,8 +14,8 @@ const VisionSection = () => {
 
   return (
     <section className="relative bg-orange text-white">
-      <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-        <div className="text-center mb-20">
+      <div className="container mx-auto flex px-5 py-12 sm:py-24 items-center justify-center flex-col">
+        <div className="text-center mb-6 sm:mb-20">
           <h1 className="sm:text-3xl text-2xl font-medium text-white mb-4">
             Notre Vision
           </h1>

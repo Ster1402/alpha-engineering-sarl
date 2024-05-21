@@ -12,7 +12,7 @@ const ServicesSection = () => {
       id={SECTIONS_IDS.SERVICE}
       className="text-gray-600 bg-[#1CA4B11A]/15 body-font"
     >
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-12 sm:py-24 mx-auto">
         <h1 className="text-2xl md:text-4xl text-black font-bold text-center mb-2">
           Nos Services
         </h1>
@@ -31,7 +31,7 @@ const ServicesSection = () => {
                 )}
               <div className="p-4 md:w-1/3">
                 <div className="h-full bg-white border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden flex flex-col">
-                  <div className="h-48 md:h-56 overflow-hidden">
+                  <div className="sm:h-48 md:h-56 overflow-hidden">
                     <Image
                       alt="content"
                       className="w-full object-cover object-center"

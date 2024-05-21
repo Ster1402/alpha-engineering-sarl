@@ -30,7 +30,7 @@ export function ResponsiveNavigationDrawer({
           </Button>
         </DrawerTrigger>
         <DrawerContent>
-          <div className={cn("mx-auto h-[80vh] w-full max-w-sm", className)}>
+          <div className={cn("mx-auto min-h-[80vh] overflow-x-hidden overflow-y-auto w-full max-w-sm", className)}>
             <DrawerHeader>
               <DrawerTitle>Menu</DrawerTitle>
               <DrawerDescription>{appConfig.title}</DrawerDescription>
