@@ -2,10 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import lang from "@/lang";
-import { Button } from "../ui/button";
-import Link from "next/link";
-import { ROUTES } from "@/config";
 import RenderHtmlContent from "../common/RenderHTMLContent";
 import { cn } from "@/lib/utils";
 
@@ -30,8 +26,8 @@ const ServiceProject: React.FC<ServiceProjectProps> = ({
     >
       <div
         className={cn(
-          "mx-auto justify-center gap-2 flex flex-col md:flex-row",
-          reverse && "md:flex-row-reverse"
+          "mx-auto justify-center w-10/12 gap-8 flex flex-col",
+          reverse ? "md:flex-row-reverse" : "md:flex-row"
         )}
       >
         <div className="flex flex-col min-h-80 flex-1 justify-between h-full w-full md:w-1/2">

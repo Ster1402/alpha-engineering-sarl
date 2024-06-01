@@ -50,7 +50,7 @@ const config = {
         orange: "#EE7428",
         accent: "#EE7428",
         "accent-foreground": "#FFFFFF",
-        "light-gold": "#FDDE6D",
+        "light-gold": "#EE7428",
       },
       keyframes: {
         "accordion-down": {
