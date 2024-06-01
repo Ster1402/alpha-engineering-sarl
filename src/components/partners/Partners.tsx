@@ -16,7 +16,7 @@ const Partners = () => {
         </h1>
         <div className="flex flex-wrap -m-4">
           {range(1, 4).map((index) => (
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div key={index} className="lg:w-1/4 md:w-1/2 p-4 w-full">
               <a
                 href="#"
                 className="block relative h-48 rounded overflow-hidden"
