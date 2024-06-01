@@ -11,11 +11,13 @@ import {
   defaultProfilePage,
 } from "./form";
 import { defaultManageDestinationSection } from "./manage-destination-section";
+import { defaultPartners } from "./partners";
 
 const lang = {
   banner: defaultBannerText,
   footer: defaultFooterSection,
   services: defaultAppServices,
+  partners: defaultPartners,
   manageDestinationSection: defaultManageDestinationSection,
   buttons: defaultButtonText,
   pages: {
