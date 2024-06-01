@@ -46,7 +46,7 @@ const config = {
         blue: "#1D3A8A",
         secondary: "#1CA4B1",
         "light-blue": "#E9F4FF",
-        gold: "#FCCB19",
+        gold: "#EE7428",
         orange: "#EE7428",
         accent: "#EE7428",
         "accent-foreground": "#FFFFFF",
