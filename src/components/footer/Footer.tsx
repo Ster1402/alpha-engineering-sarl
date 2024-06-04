@@ -4,6 +4,7 @@ import RenderHtmlContent from "../common/RenderHTMLContent";
 import NavigationLinks from "../common/NavigationLinks";
 import SocialMediaLinks from "../common/SocialMediaLinks";
 import Icons from "../common/Icons";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -47,7 +48,8 @@ const Footer = () => {
       </div>
       <div className="h-12 opacity-75 flex flex-col justify-center items-center w-full bg-blue brightness-150 text-center">
         <div className="inline-flex text-gray-50/50 text-sm">
-          <RenderHtmlContent content={lang.footer.copyright} />
+          <RenderHtmlContent content={lang.footer.copyright} /> {' | '}
+          <Link href={lang.footer.poweredByLink}>{lang.footer.poweredBy}</Link>
         </div>
       </div>
     </footer>
