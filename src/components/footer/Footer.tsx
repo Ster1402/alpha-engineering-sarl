@@ -48,8 +48,8 @@ const Footer = () => {
       </div>
       <div className="h-12 opacity-75 flex flex-col justify-center items-center w-full bg-blue brightness-150 text-center">
         <div className="inline-flex text-gray-50/50 text-sm">
-          <RenderHtmlContent content={lang.footer.copyright} /> {' | '}
-          <Link href={lang.footer.poweredByLink}>{lang.footer.poweredBy}</Link>
+          <RenderHtmlContent content={lang.footer.copyright} /> {" | "}{" "}
+          {lang.footer.poweredBy}
         </div>
       </div>
     </footer>
