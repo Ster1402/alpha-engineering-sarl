@@ -79,7 +79,7 @@ const defaultAppServices: AppService[] = [
         id: 3,
         title: "Alimentation en Eau Potable de Wenchi",
         description: `Station de stockage`,
-        country: "Cameroun",
+        country: "Ghana",
         images: [
           "/assets/images/projects/p7.png",
           "/assets/images/projects/p8.jpeg",
@@ -87,7 +87,7 @@ const defaultAppServices: AppService[] = [
       },
       {
         id: 4,
-        title: "Alimentation en Eau Potable de Kribi",
+        title: "Alimentation en Eau Potable de Wenchi",
         description: `Réseau de distribution`,
         country: "Ghana",
         images: [
@@ -98,7 +98,7 @@ const defaultAppServices: AppService[] = [
       {
         id: 5,
         title: "Alimentation en Eau Potable du Port de Kribi",
-        description: `Unité de stockage`,
+        description: `Unité de relevage`,
         country: "Cameroun",
         images: [
           "/assets/images/projects/p11.jpeg",
@@ -132,7 +132,7 @@ const defaultAppServices: AppService[] = [
     projects: [
       {
         id: 1,
-        title: "Alimentation en Eau Potable de Kribi port automne de Kribi",
+        title: "Alimentation en Eau Potable du Port automne de Kribi",
         description: `Ligne électrique et réseau fibre optique`,
         country: "Cameroun",
         images: [
@@ -163,9 +163,9 @@ const defaultAppServices: AppService[] = [
     projects: [
       {
         id: 1,
-        title: "Alimentation en Eau Potable de Kribi port autonome de Kribi",
+        title: "Alimentation en Eau Potable du Port autonome de Kribi",
         description: `Château d’eau sur tour 1500 m3`,
-        country: "Caneroun",
+        country: "Cameroun",
         images: [
           "/assets/images/projects/p15.png",
           "/assets/images/projects/p16.png",
@@ -211,10 +211,10 @@ const defaultAppServices: AppService[] = [
     title: `${appConfig.appName} :`,
     subtitle: "Automation et télégestion",
     href: "/services/6",
-    description: `<b>Alpha Engineering</b> offre la possibilité aux entreprise partenaires et au particulier de développer des installations connecté et autonome grâce au SCADA.`,
+    description: `<b>Alpha Engineering</b> offre la possibilité aux entreprises partenaires et aux particuliers de développer des installations connectées et autonomes grâce au SCADA.`,
     imageUrl: "/assets/images/services/s6.jpeg",
     expertises: [
-      `Les stations de traitement d’eaux entièrement automatisée`,
+      `Les stations de traitement d’eaux entièrement automatisées`,
       `Les stations d’épuration semi-autonome`,
       `Les réseaux de transport et de distribution télégérés`,
     ],
