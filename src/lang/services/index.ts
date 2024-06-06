@@ -224,7 +224,7 @@ const defaultAppServices: AppService[] = [
     title: `${appConfig.appName} :`,
     subtitle: "Environnement",
     href: "/services/7",
-    description: `Notre entreprise s’inscrit dans une dynamique de préservation de l’environnement. Nous vous accompagnons dans le développement et la mise en œuvre des Plans de Gestion Environnementale et Sociale (PGES).`,
+    description: `Notre entreprise s’inscrit dans une dynamique de préservation de l’environnement. Nous vous accompagnons dans le développement et la mise en œuvre des Plans de Gestion Environnementale et Sociale (PGES) ainsi que les Etudes d'Impacts Environnementales et Sociales (EIES)`,
     imageUrl: "/assets/images/services/s7.jpeg",
   },
 ];
