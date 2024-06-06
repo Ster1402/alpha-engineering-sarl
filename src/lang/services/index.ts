@@ -8,21 +8,21 @@ const defaultAppServices: AppService[] = [
     title: `${appConfig.appName} :`,
     subtitle: "Topographie et SIG",
     href: "/services/1",
-    description: `Nous vous accompagnons dans la réalisation de tous vos projets de génie civil d’envergure en mettant à votre disposition des ingénieurs topographes expérimentétechnologie dans le métier.`,
+    description: `Nous vous accompagnons dans la réalisation de tous vos projets de génie civil d’envergure en mettant à votre disposition des ingénieurs topographes expérimentés dans le métier.`,
     imageUrl: "/assets/images/services/s1.jpeg",
     expertises: [
-      `La réalisation de levés topographie pour s qui développent des plans de grandes
-       précisions grâce à la maitrise de nouvelle aménagement paysagé et terrassement
+      `La réalisation de levés topographiques qui développent des plans de grandes
+       précisions grâce à la maitrise de nouvelles technologies
        (levé au drone).`,
-      `La modélisation des plates forme`,
+      `La modélisation des plateformes`,
       `L’implantation de précision de tout ouvrage de VRD`,
     ],
     projects: [
       {
         id: 1,
         title: "Alimentation en eau potable Wenchi",
-        description: `Model de la plateforme`,
-        country: "Cameroun",
+        description: `Modèle de la plateforme`,
+        country: "Ghana",
         images: [
           "/assets/images/projects/p1.png",
           "/assets/images/projects/p2.png",
@@ -57,7 +57,7 @@ const defaultAppServices: AppService[] = [
     projects: [
       {
         id: 1,
-        title: "Alimentation en Eau Potable port autonome de Kribi",
+        title: "Alimentation en Eau Potable du port autonome de Kribi",
         description: `Station de captage`,
         country: "Cameroun",
         images: [
@@ -67,9 +67,9 @@ const defaultAppServices: AppService[] = [
       },
       {
         id: 2,
-        title: "Alimentation en Eau Potable de Kribi",
-        description: `Station de stockage`,
-        country: "Cameroun",
+        title: "Alimentation en Eau Potable de Wenchi",
+        description: `Ligne de clarification`,
+        country: "Ghana",
         images: [
           "/assets/images/projects/p5.png",
           "/assets/images/projects/p6.jpeg",
@@ -77,7 +77,7 @@ const defaultAppServices: AppService[] = [
       },
       {
         id: 3,
-        title: "Alimentation en Eau Potable de Kribi",
+        title: "Alimentation en Eau Potable de Wenchi",
         description: `Station de stockage`,
         country: "Cameroun",
         images: [
@@ -88,8 +88,8 @@ const defaultAppServices: AppService[] = [
       {
         id: 4,
         title: "Alimentation en Eau Potable de Kribi",
-        description: `Station de stockage`,
-        country: "Cameroun",
+        description: `Réseau de distribution`,
+        country: "Ghana",
         images: [
           "/assets/images/projects/p9.png",
           "/assets/images/projects/p10.png",
@@ -97,8 +97,8 @@ const defaultAppServices: AppService[] = [
       },
       {
         id: 5,
-        title: "Alimentation en Eau Potable de Kribi",
-        description: `Station de stockage`,
+        title: "Alimentation en Eau Potable du Port de Kribi",
+        description: `Unité de stockage`,
         country: "Cameroun",
         images: [
           "/assets/images/projects/p11.jpeg",
