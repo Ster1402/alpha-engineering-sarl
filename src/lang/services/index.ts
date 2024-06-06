@@ -91,7 +91,7 @@ const defaultAppServices: AppService[] = [
         description: `Réseau de distribution`,
         country: "Ghana",
         images: [
-          "/assets/images/projects/p9.png",
+          "/assets/images/projects/p9.jpg",
           "/assets/images/projects/p10.png",
         ],
       },
