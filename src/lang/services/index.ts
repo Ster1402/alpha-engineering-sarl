@@ -64,6 +64,12 @@ const defaultAppServices: AppService[] = [
         images: [
           "/assets/images/projects/p3.png",
           "/assets/images/projects/p4.png",
+          "/assets/images/projects/p29.jpg",
+          "/assets/images/projects/p30.jpg",
+          "/assets/images/projects/p31.jpg",
+          "/assets/images/projects/p32.jpg",
+          "/assets/images/projects/p33.jpg",
+          "/assets/images/projects/p34.jpg",
         ],
       },
       {
