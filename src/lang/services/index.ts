@@ -24,6 +24,7 @@ const defaultAppServices: AppService[] = [
         description: `Modèle de la plateforme`,
         country: "Ghana",
         images: [
+          "/assets/images/projects/Copie_de_Whenchi_WTP.png",
           "/assets/images/projects/p1.png",
           "/assets/images/projects/p2.png",
         ],
