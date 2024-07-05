@@ -28,7 +28,7 @@ const Partners = () => {
                   className="object-fill w-full h-full block"
                   src={partner.logo}
                   width={420}
-                  height={260}
+                  height={172}
                 />
               </a>
               <div className="mt-4">
