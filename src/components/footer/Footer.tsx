@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-white flex flex-col space-y-2 pr-8">
-            <h3 className="font-bold text-xl">Réseau</h3>
+            <h3 className="font-bold text-xl">Réseaux</h3>
             <div className="text-white text-sm pr-4 mb-6 font-light">
               <SocialMediaLinks />
             </div>
