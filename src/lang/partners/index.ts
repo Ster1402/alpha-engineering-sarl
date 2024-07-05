@@ -2,7 +2,7 @@ const defaultPartners: Partner[] = [
   {
     id: 1,
     name: "ASPAC Engineering",
-    logo: "/assets/images/partners/logoEngineering.jpg",
+    logo: "/assets/images/partners/logoEngineering2.jpg",
     link: "https://aspac-engineering.com/",
   },
   {
