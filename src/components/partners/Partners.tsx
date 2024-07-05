@@ -20,7 +20,7 @@ const Partners = () => {
             <div key={partner.id} className="lg:w-1/4  md:w-1/2 p-4 w-full">
               <a
                 href={partner.link}
-                className="block relative h-48 border border-orange rounded overflow-hidden"
+                className="block relative h-48 rounded overflow-hidden"
                 title={partner.name}
               >
                 <Image
