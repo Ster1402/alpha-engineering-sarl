@@ -3,11 +3,6 @@ import lang from "@/lang";
 import Image from "next/image";
 
 const Partners = () => {
-  function range(start: number, end: number) {
-    return Array(end - start + 1)
-      .fill(0)
-      .map((_, idx) => start + idx);
-  }
 
   return (
     <section id={SECTIONS_IDS.PARTNERS} className="text-gray-600 body-font">

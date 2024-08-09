@@ -8,7 +8,13 @@ type ServicePageProps = {
   };
 };
 
-const Service = ({ params: { id } }: ServicePageProps) => {
+export async function generateStaticParams() {
+  return lang.services.map((service) => ({
+    id: service.id.toString(),
+  }));
+}
+
+export default function Service({ params: { id } }: ServicePageProps) {
   const service = lang.services.find((service) => service.id === Number(id));
 
   if (service === undefined) {
@@ -32,6 +38,4 @@ const Service = ({ params: { id } }: ServicePageProps) => {
       )}
     </article>
   );
-};
-
-export default Service;
+}
